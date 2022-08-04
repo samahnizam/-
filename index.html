@@ -7,25 +7,26 @@
     <title> نادي غيتس التعليمي </title>
 </head>
 <body dir="rtl">
+  <script src="javaScript/javacodes.js"></script>>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <div class="container">
 
-  <marquee scrolldelay="20" width="device-width" height="40px" direction="right" bgcolor="#F87431">
-    <font color="#ffffff">أهلا وسهلا بكم في موقع نادي غيتس التعليمي...
+  <marquee scrolldelay="20" width="device-width" height="40px" direction="right"  onmouseover="this.stop()"  onmouseout="this.start()"  bgcolor="#F87431">
+    <font color="#ffffff" >أهلا وسهلا بكم في موقع نادي غيتس التعليمي...
       نتمنى لأطفالكم قضاء وقت ممتع معنا
 
     </font></marquee>
 <br>
 
   <button type="button" class="btn btn-info"><a href=login.html>تسجيل دخول</a></button>
-  <button type="button" class="btn btn-light">  اشترك في الموقع</button>
+  <button type="button" class="btn btn-info"><a href="signout.html">اشترك في الموقع</a></button>
   <div class="btn-group">
     
     <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       دورات البرمجة
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#card1">الأطفال</a></li>
+      <li><a class="dropdown-item" href="#card1" >الأطفال</a></li>
       <li><a class="dropdown-item" href="#">اليافعين </a></li>
       <li><a class="dropdown-item" href="#">الجامعيين</a></li>
       <li><hr class="dropdown-divider"></li>
@@ -34,7 +35,7 @@
   </div>
   
   <div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
   دورات علمية 
    </button>
     <ul class="dropdown-menu">
@@ -46,7 +47,7 @@
   </div>
   
   <div class="btn-group">
-    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
   دورات تخصصية 
    </button>
     <ul class="dropdown-menu">
@@ -57,6 +58,7 @@
       
     </ul>
   </div>
+
   
   
 
@@ -98,13 +100,13 @@
 
 
 
-  <div class="row" id="card1">
+  <div class="row" id="card1" >
     <div class="col-sm-4">
       <div class="card text-center">
         <img src="images/card3.jpeg" class="card-img-top" alt="...">
         <div class="card-body" >
           <h5 class="card-title">Robotic Kids</h5>
-          <p class="card-text"> أهداف الدورة :<br> 
+          <p class="card-text" > أهداف الدورة :<br> 
             تطبيقات عملية على الروبوت <br>
             تركيب ميكانيزمات<br>
             تجارب مفيدة وممتعة <br>
@@ -185,10 +187,13 @@
 بهية طحان 
                      
      </p>
+
+
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS76bGltSqJkiQ8nCeGopInLu0kALh3fM09-Y5wRwr49nDDA/viewform?usp=sf_link" class="btn btn-primary">رابط التسجيل</a>
       </div>
     </div>
   </div>
+
   <div class="col-sm-4">
     <div class="card text-center">
       <img src="images/card5.jpeg" class="card-img-top" >
@@ -260,7 +265,7 @@
 
 
 
-<marquee scrolldelay="20" width="device-width" height="40px" direction="right" bgcolor="#F87431">
+<marquee scrolldelay="20" width="device-width" height="40px" direction="right" onmouseover="this.stop()" onmouseout="this.start()" bgcolor="#F87431">
   <font color="#ffffff">
 
   
