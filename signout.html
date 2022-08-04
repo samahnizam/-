@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<style>
+   /*add full-width input fields*/
+  
+   input[type=text],
+   input[type=password] {
+       width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 2px solid #ccc;
+       box-sizing: border-box;
+   }
+   /* set a style for the main container */
+   .main-container {
+       direction: rtl;
+       padding-right: 15px;
+       padding-left: 15px;
+       margin-right: auto;
+       margin-left: auto;
+       max-width: 700px;
+   }
+ 
+ 
+   /* set a style for all buttons*/
+  
+   button {
+       background-color: rgb(163, 235, 163);
+       color: white;
+       padding: 15px 20px;
+       margin: 8px 0;
+       cursor: pointer;
+       width: 100%;
+   }
+   /*set styles for the cancel button*/
+  
+   .cancelbtn {
+       padding: 15px 20px;
+       background-color: #fd0b0b;
+   }
+   /*float cancel and signup buttons and add an equal width*/
+  
+   .cancelbtn,
+   .signupbtn {
+       float: left;
+       width: 50%;
+   }
+   /*add padding to container elements*/
+  
+   .container {
+       padding: 16px;
+   }
+   /*clear floats*/
+  
+   .clearfix::after {
+       content: "";
+       clear: both;
+       display: table;
+   }
+   /*styles for cancel button and signup button
+   on extra small screens*/
+  
+   @media screen and (max-width: 300px) {
+       .cancelbtn,
+       .signupbtn {
+           width: 100%;
+       }
+   }
+</style>
+
+<script src="javaScript/javacodes.js"></script>>
+<body>
+   <div class="main-container">
+       <h2>إنشاء حساب جديد</h2>
+       <!--Step 1:Adding HTML-->
+       <form action="/action_page.php" style="border:1px solid #ccc">
+           <div class="container">
+               <label><b>البريد الالكتروني</b></label>
+               <input type="text" id="Email" placeholder="أدخل بريدك الالكتروني هنا" name="email" required>
+ 
+               <label ><b>كلمة السر</b></label>
+               <input  id="pass1" type="password" placeholder="كلمة السر" name="psw" onblur="return checkpasswordlenght()" required>
+ 
+               <label ><b>تأكيد كلمة السر </b></label>
+               <input  id="pass2" type="password" placeholder="تأكيد كلمة السر" name="psw-repeat" onblur="return checkpassword()" required>
+                              
+               <div class="clearfix">
+                   <button type="button" class="cancelbtn" > <a href=index.html>إلغاء الأمر</a>  </a></button>
+                   <button type="submit" class="signupbtn"  onclick="return checksignout()">إنشاء حساب</button>
+               </div>
+           </div>
+       </form>
+   </div>
+ 
+</body>
+</html>

@@ -7,6 +7,16 @@ body {
   background: #fff;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
